@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mon super site</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin=""/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@1,900&family=Roboto+Condensed&display=swap" rel="stylesheet">
+  
+
+    <link rel="stylesheet" href="style.css" />
+ 
+  <header>
+
+   
+  </header>
+
+  <h1 class="uk-align-center">Que faire à <strong><span">Paris</span></strong> ?</h1>
+
+
+
+  
+  <body>
+    
+
+    <div id="mapid"></div>
+
+    <div class="eventsearch">
+
+      <form class="uk-search uk-search-default" onsubmit=" onFormSubmit(event)">
+          <span class="uk-search-icon-flip uk-align-center" uk-search-icon></span>
+          <input class="uk-search-input" type="text" name="search" id="searchInput" />
+          <input class="uk-button uk-button-danger uk-button-small uk-margin-top" style="font: bold 14px Arial;" type="submit" />
+      </form>
+
+      <div class="button uk-align-center">
+          <button class="uk-button1" onclick="getData('concert')">Concert</button>
+          <button class="uk-button2"  onclick="getData('restaurant')">Restaurant</button>
+          <button class="uk-button3" onclick="getData('jeu')">Jeu</button>
+      </div>
+
+  </div>
+
+
+
+    <!-- import the webpage's javascript file -->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
